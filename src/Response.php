@@ -1,6 +1,6 @@
 <?php
 
-namespace AcceptcoinApi;
+namespace App;
 
 class Response
 {

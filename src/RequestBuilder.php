@@ -1,7 +1,9 @@
 <?php
 
-namespace AcceptcoinApi;
+namespace App;
 
+
+use App\Services\Method;
 
 abstract class RequestBuilder implements RequestBuilderInterface
 {
@@ -29,15 +31,6 @@ abstract class RequestBuilder implements RequestBuilderInterface
      * @var array
      */
     protected array $queryParams = [];
-
-    /**
-     * @return ApiResource
-     */
-    public function getResource(): ApiResource
-    {
-        return $this->resource;
-    }
-
 
     /**
      * @var Method
@@ -161,6 +154,7 @@ abstract class RequestBuilder implements RequestBuilderInterface
 
         return $this;
     }
+
 
     /**
      * @param array $headers

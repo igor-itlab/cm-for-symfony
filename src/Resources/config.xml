@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container
+        xmlns="http://symfony.com/schema/dic/services"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services
+           https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <defaults autowire="true" autoconfigure="true" />
+        <service id="acceptcoin.client" class="Acceptcoin\Acceptcoin" public="true">
+            <argument type="service" id="event_dispatcher" on-invalid="null"/>
+            <argument type="service" id="validator" on-invalid="null"/>
+
+        </service>
+        <service id="AcceptcoinApi\AcceptcoinApi" alias="acceptcoin.client" public="false"/>
+<!--        <service id="acceptcoin.control_panel_resource" class="ApiClient\Api\ControlPanel\ControlPanelResource"-->
+<!--                 public="true"/>-->
+        <service id="AcceptcoinApi\Api\ControlPanelResource" alias="api_client.control_panel_resource"
+                 public="false"/>
+    </services>
+
+</container>

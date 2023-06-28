@@ -1,12 +1,18 @@
 <?php
 
-namespace AcceptcoinApi;
+namespace App;
+
+use App\Services\HttpClientRequestBuilder;
 
 abstract class Request
 {
-    public function __construct()
-    {
+    protected ApiResource $resource;
 
+    public function __construct(ApiResource $resource)
+    {
+        $this->resource = $resource;
+        $this->resource->attachedRequestBuilder($this->createRequestBuilder());
+        $this->resource->attachedRequest($this);
     }
 
     /**

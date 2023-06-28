@@ -1,8 +1,13 @@
 <?php
 
-use Request\Project;
+namespace App\Api;
 
-class AcceptcoinResource
+
+use App\Api\Request\IframeInvoice;
+use App\Api\Request\Project;
+use App\ApiResource;
+
+class AcceptcoinResource extends ApiResource
 {
     /**
      * @var string|null
@@ -59,9 +64,20 @@ class AcceptcoinResource
         return $this;
     }
 
+    /**
+     * @return Project
+     */
     public function project(): Project
     {
         return new Project($this);
+    }
+
+    /**
+     * @return IframeInvoice
+     */
+    public function iframeInvoice(): IframeInvoice
+    {
+        return new IframeInvoice($this);
     }
 
 
