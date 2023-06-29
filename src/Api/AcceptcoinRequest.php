@@ -35,7 +35,8 @@ class AcceptcoinRequest extends Request
             ->mergeHeaders([
                 'Accept' => "application/json",
                 'Content-Type' => "application/json",
-                'Authorization' => "JWS-AUTH-TOKEN " . $this->securityManager->getJwtToken(
+                'Authorization' => "JWS-AUTH-TOKEN " .
+                    $this->securityManager->getJwtToken(
                         $this->resource->getProjectId(),
                         $this->resource->getSecret()
                     )

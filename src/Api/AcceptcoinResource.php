@@ -3,8 +3,8 @@
 namespace App\Api;
 
 
-use App\Api\Request\IframeInvoice;
-use App\Api\Request\Project;
+use App\Api\Request\Invoice\IframeInvoice;
+use App\Api\Request\Project\Project;
 use App\ApiResource;
 
 class AcceptcoinResource extends ApiResource

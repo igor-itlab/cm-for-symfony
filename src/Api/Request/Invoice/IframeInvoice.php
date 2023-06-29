@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Request;
+namespace App\Api\Request\Invoice;
 
 use App\Api\AcceptcoinRequest;
 use App\MappedBy;
@@ -24,6 +24,19 @@ class IframeInvoice extends AcceptcoinRequest
             ->setMethod(Method::POST())
             ->setPath('/api/iframe-invoices')
             ->setBody($body);
+
+        return $this->send();
+    }
+
+    /**
+     * @param string $id
+     * @return mixed
+     */
+    public function getById(string $id): mixed
+    {
+        $this->getRequestBuilder()
+            ->setMethod(Method::GET())
+            ->setPath("api/iframe-invoices/$id");
 
         return $this->send();
     }

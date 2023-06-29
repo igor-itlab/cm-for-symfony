@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Api\Request;
+namespace App\Api\Request\Project;
 
 
+use App\Api\AcceptcoinRequest;
 use App\MappedBy;
 use App\Services\Method;
-use App\Api\AcceptcoinRequest;
 
 /**
  * Class Project
