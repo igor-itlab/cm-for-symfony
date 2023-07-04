@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Api\Request;
+namespace AcceptcoinApi\Api\Request;
 
-use App\Api\AcceptcoinRequest;
-use App\Services\Method;
+use AcceptcoinApi\Api\AcceptcoinRequest;
+use AcceptcoinApi\Services\Method;
 
 class Status extends AcceptcoinRequest
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Api\Request\Project;
+namespace AcceptcoinApi\Api\Request\Project;
 
-use App\Api\AcceptcoinRequest;
-use App\Services\Method;
+use AcceptcoinApi\Api\AcceptcoinRequest;
+use AcceptcoinApi\Services\Method;
 
 class ProjectSettings extends AcceptcoinRequest
 {

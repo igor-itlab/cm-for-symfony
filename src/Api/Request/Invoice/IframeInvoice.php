@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Api\Request\Invoice;
+namespace AcceptcoinApi\Api\Request\Invoice;
 
-use App\Api\AcceptcoinRequest;
-use App\MappedBy;
-use App\Services\Method;
+use AcceptcoinApi\Api\AcceptcoinRequest;
+use AcceptcoinApi\MappedBy;
+use AcceptcoinApi\Services\Method;
 
 /**
  * Class IframeInvoice
  * @package ApiClient\Api\ControlPanel\Request
- * @MappedBy(value="App\Api\Mapper\Invoice\IframeInvoice")
+ * @MappedBy(value="AcceptcoinApi\Api\Mapper\Invoice\IframeInvoice")
  */
 class IframeInvoice extends AcceptcoinRequest
 {

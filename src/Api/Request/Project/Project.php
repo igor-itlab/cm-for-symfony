@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Api\Request\Project;
+namespace AcceptcoinApi\Api\Request\Project;
 
 
-use App\Api\AcceptcoinRequest;
-use App\MappedBy;
-use App\Services\Method;
+use AcceptcoinApi\Api\AcceptcoinRequest;
+use AcceptcoinApi\MappedBy;
+use AcceptcoinApi\Services\Method;
 
 /**
  * Class Project
  * @package ApiClient\Api\ControlPanel\Request
- * @MappedBy(value="App\Api\Mapper\Project\Project")
+ * @MappedBy(value="AcceptcoinApi\Api\Mapper\Project\Project")
  */
 class Project extends AcceptcoinRequest
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services;
+namespace AcceptcoinApi\Services;
 
 
 /**

@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Api\Response\Project;
+namespace AcceptcoinApi\Api\Response\Project;
 
-
-
-use App\Api\Response\User\User;
+use AcceptcoinApi\Api\Response\User\User;
 
 /**
  * Class Project

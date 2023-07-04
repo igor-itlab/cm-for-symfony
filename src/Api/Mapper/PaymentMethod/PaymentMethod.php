@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Api\Mapper\PaymentMethod;
+namespace AcceptcoinApi\Api\Mapper\PaymentMethod;
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class PaymentMethod extends Mapper
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\PaymentMethod\PaymentMethod")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\PaymentMethod\PaymentMethod")
      */
     public function getAll(Response $response): array
     {
@@ -21,7 +21,7 @@ class PaymentMethod extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\PaymentMethod\PaymentMethod")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\PaymentMethod\PaymentMethod")
      */
     public function getProjectPaymentMethods(Response $response): array
     {

@@ -3,7 +3,7 @@
 namespace AcceptcoinApi\Tests;
 
 
-use App\Api\AcceptcoinResource;
+use AcceptcoinApi\Api\AcceptcoinResource;
 
 class ProjectTest extends AcceptcoinApiTest
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Api\Mapper\Project;
+namespace AcceptcoinApi\Api\Mapper\Project;
 
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class ProjectFee
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\ProjectFee")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\ProjectFee")
      */
     public function getAll(Response $response): array
     {

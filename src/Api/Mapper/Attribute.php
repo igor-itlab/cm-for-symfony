@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Api\Mapper;
+namespace AcceptcoinApi\Api\Mapper;
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class Attribute extends Mapper
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Attribute")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Attribute")
      */
     public function getAttributesBalances(Response $response): array
     {

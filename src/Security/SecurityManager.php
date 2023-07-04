@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Security;
+namespace AcceptcoinApi\Security;
 
-use App\Security\JWTService\Jwt;
+use AcceptcoinApi\Security\JWTService\Jwt;
 use Jose\Component\KeyManagement\JWKFactory;
 
 class SecurityManager

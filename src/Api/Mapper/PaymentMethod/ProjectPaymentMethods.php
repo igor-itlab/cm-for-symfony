@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Api\Mapper\PaymentMethod;
+namespace AcceptcoinApi\Api\Mapper\PaymentMethod;
 
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class ProjectPaymentMethods
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\ProjectPaymentMethods")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\ProjectPaymentMethods")
      */
     public function getAll(Response $response): array
     {
@@ -20,7 +20,7 @@ class ProjectPaymentMethods
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\ProjectPaymentMethods")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\ProjectPaymentMethods")
      */
     public function getById(Response $response): array
     {
@@ -30,7 +30,7 @@ class ProjectPaymentMethods
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\ProjectPaymentMethods")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\ProjectPaymentMethods")
      */
     public function create(Response $response): array
     {
@@ -40,7 +40,7 @@ class ProjectPaymentMethods
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\ProjectPaymentMethods")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\ProjectPaymentMethods")
      */
     public function update(Response $response): array
     {
@@ -50,7 +50,7 @@ class ProjectPaymentMethods
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Attribute")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Attribute")
      */
     public function getAttributesById(Response $response): array
     {

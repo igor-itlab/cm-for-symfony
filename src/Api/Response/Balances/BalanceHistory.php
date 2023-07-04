@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Response\Balances;
+namespace AcceptcoinApi\Api\Response\Balances;
 
 class BalanceHistory
 {

@@ -1,8 +1,7 @@
 <?php
 
 
-namespace App;
-
+namespace AcceptcoinApi;
 
 abstract class ApiResource
 {

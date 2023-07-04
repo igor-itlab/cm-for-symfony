@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Response\Project;
+namespace AcceptcoinApi\Api\Response\Project;
 
 class ProjectFee
 {

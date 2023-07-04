@@ -3,8 +3,8 @@
 namespace AcceptcoinApi\Tests;
 
 
-use App\Api\AcceptcoinResource;
-use App\Api\Response\Invoice\IframeInvoice;
+use AcceptcoinApi\Api\AcceptcoinResource;
+use AcceptcoinApi\Api\Response\Invoice\IframeInvoice;
 
 class IframeInvoiceTest extends AcceptcoinApiTest
 {

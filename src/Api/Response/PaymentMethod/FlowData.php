@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Response\PaymentMethod;
+namespace AcceptcoinApi\Api\Response\PaymentMethod;
 
 class FlowData
 {

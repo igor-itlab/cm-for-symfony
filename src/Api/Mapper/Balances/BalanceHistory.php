@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Api\Mapper\Balances;
+namespace AcceptcoinApi\Api\Mapper\Balances;
 
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class BalanceHistory
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Balances\BalanceHistory")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Balances\BalanceHistory")
      */
     public function getAll(Response $response): array
     {
@@ -20,7 +20,7 @@ class BalanceHistory
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Balances\BalanceHistory")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Balances\BalanceHistory")
      */
     public function getById(Response $response): array
     {

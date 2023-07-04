@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Api\Response\Batches;
+namespace AcceptcoinApi\Api\Response\Batches;
 
-use App\Api\Response\Project\Project;
-use App\Api\Response\Status;
+use AcceptcoinApi\Api\Response\Project\Project;
+use AcceptcoinApi\Api\Response\Status;
 
 class Batches
 {

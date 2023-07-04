@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Response\User;
+namespace AcceptcoinApi\Api\Response\User;
 
 
 /**

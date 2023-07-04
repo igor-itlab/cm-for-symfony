@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Api\Response\Project;
+namespace AcceptcoinApi\Api\Response\Project;
 
-use App\Api\Response\Settings;
+use AcceptcoinApi\Api\Response\Settings;
 
 class ProjectSettings
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Api\Response\Transaction;
+namespace AcceptcoinApi\Api\Response\Transaction;
 
-use App\Api\Response\PaymentMethod\FlowData;
-use App\Api\Response\Project\ProjectPaymentMethods;
-use App\Api\Response\Status;
+use AcceptcoinApi\Api\Response\PaymentMethod\FlowData;
+use AcceptcoinApi\Api\Response\Project\ProjectPaymentMethods;
+use AcceptcoinApi\Api\Response\Status;
 
 class Transaction
 {

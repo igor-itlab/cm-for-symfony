@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace AcceptcoinApi;
 
-use App\Services\HttpClientRequestBuilder;
+use AcceptcoinApi\Services\HttpClientRequestBuilder;
 
 abstract class Request
 {

@@ -1,24 +1,24 @@
 <?php
 
-namespace App\Api;
+namespace AcceptcoinApi\Api;
 
 
-use App\Api\Request\Attribute;
-use App\Api\Request\Balances\BalanceHistory;
-use App\Api\Request\Balances\Balances;
-use App\Api\Request\Batches;
-use App\Api\Request\Invoice\IframeInvoice;
-use App\Api\Request\PaymentMethod\PaymentMethod;
-use App\Api\Request\PaymentMethod\ProjectPaymentMethods;
-use App\Api\Request\Project\Project;
-use App\Api\Request\Project\ProjectFee;
-use App\Api\Request\Project\ProjectSettings;
-use App\Api\Request\Status;
-use App\Api\Request\Transaction\Payment;
-use App\Api\Request\Transaction\Payout;
-use App\Api\Request\Transaction\Transaction;
-use App\Api\Request\User;
-use App\ApiResource;
+use AcceptcoinApi\Api\Request\Attribute;
+use AcceptcoinApi\Api\Request\Balances\BalanceHistory;
+use AcceptcoinApi\Api\Request\Balances\Balances;
+use AcceptcoinApi\Api\Request\Batches;
+use AcceptcoinApi\Api\Request\Invoice\IframeInvoice;
+use AcceptcoinApi\Api\Request\PaymentMethod\PaymentMethod;
+use AcceptcoinApi\Api\Request\PaymentMethod\ProjectPaymentMethods;
+use AcceptcoinApi\Api\Request\Project\Project;
+use AcceptcoinApi\Api\Request\Project\ProjectFee;
+use AcceptcoinApi\Api\Request\Project\ProjectSettings;
+use AcceptcoinApi\Api\Request\Status;
+use AcceptcoinApi\Api\Request\Transaction\Payment;
+use AcceptcoinApi\Api\Request\Transaction\Payout;
+use AcceptcoinApi\Api\Request\Transaction\Transaction;
+use AcceptcoinApi\Api\Request\User;
+use AcceptcoinApi\ApiResource;
 
 class AcceptcoinResource extends ApiResource
 {

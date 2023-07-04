@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Api\Request\PaymentMethod;
+namespace AcceptcoinApi\Api\Request\PaymentMethod;
 
-use App\Api\AcceptcoinRequest;
-use App\Services\Method;
+use AcceptcoinApi\Api\AcceptcoinRequest;
+use AcceptcoinApi\Services\Method;
 
 class PaymentMethod extends AcceptcoinRequest
 {

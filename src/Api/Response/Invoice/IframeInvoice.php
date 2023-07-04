@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Response\Invoice;
+namespace AcceptcoinApi\Api\Response\Invoice;
 
 class IframeInvoice extends Invoice
 {

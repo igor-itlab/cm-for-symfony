@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Api\Mapper;
+namespace AcceptcoinApi\Api\Mapper;
 
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class User
 {

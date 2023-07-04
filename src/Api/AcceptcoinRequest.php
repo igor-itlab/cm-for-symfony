@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Api;
+namespace AcceptcoinApi\Api;
 
-use App\ApiResource;
-use App\Request;
-use App\RequestBuilderInterface;
-use App\Security\SecurityManager;
+use AcceptcoinApi\ApiResource;
+use AcceptcoinApi\Request;
+use AcceptcoinApi\RequestBuilderInterface;
+use AcceptcoinApi\Security\SecurityManager;
 
 class AcceptcoinRequest extends Request
 {
-    private const DOMAIN = "https://cryptomc.com";
+    private const DOMAIN = "https://acceptcoin.io";
 
     /**
      * @var SecurityManager

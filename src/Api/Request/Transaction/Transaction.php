@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Api\Request\Transaction;
+namespace AcceptcoinApi\Api\Request\Transaction;
 
-use App\Api\AcceptcoinRequest;
-use App\Services\Method;
+use AcceptcoinApi\Api\AcceptcoinRequest;
+use AcceptcoinApi\Services\Method;
 
 class Transaction extends AcceptcoinRequest
 {

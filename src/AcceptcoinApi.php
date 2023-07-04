@@ -1,27 +1,13 @@
 <?php
 
-namespace App;
+namespace AcceptcoinApi;
 
-use App\Api\AcceptcoinResource;
+use AcceptcoinApi\Api\AcceptcoinResource;
 use Doctrine\Common\Annotations\AnnotationReader;
-use Doctrine\Common\Collections\ArrayCollection;
 use ReflectionClass;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class AcceptcoinApi
 {
-
-    /**
-     * @var EventDispatcherInterface|null
-     */
-    private $eventDispatcher;
-
-    /**
-     * @var ValidatorInterface|null
-     */
-    private $validator;
-
     /**
      * @var AnnotationReader
      */
@@ -32,14 +18,9 @@ class AcceptcoinApi
      */
     private ApiResource $resource;
 
-    public function __construct(
-        EventDispatcherInterface $eventDispatcher = null,
-        ValidatorInterface       $validator = null
-    )
+    public function __construct()
     {
         $this->reader = new AnnotationReader();
-        $this->eventDispatcher = $eventDispatcher;
-        $this->validator = $validator;
     }
 
     /**
@@ -61,16 +42,7 @@ class AcceptcoinApi
 
         if ($this->checkStatusCode($response->getStatusCode())) {
 
-            $errorResponse = new ErrorResponse($response);
-
-//            if ($this->eventDispatcher) {
-//                $this->eventDispatcher->dispatch(
-//                    new RequestFailedEvent($requestBuilder, $errorResponse),
-//                    ApiClientEvents::REQUEST_FAILED
-//                );
-//            }
-
-            return $errorResponse;
+            return new ErrorResponse($response);
         }
 
         return $this->responseMapping($response);
@@ -78,7 +50,7 @@ class AcceptcoinApi
 
     /**
      * @param Response $response
-     * @return Response|ArrayCollection
+     * @return Response
      */
     private function responseMapping(Response $response)
     {

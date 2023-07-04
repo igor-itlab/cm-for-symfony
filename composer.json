@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "AcceptcoinApi\\": "src/"
         }
     },
     "autoload-dev": {
@@ -38,7 +38,7 @@
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
-        "symfony/http-kernel": "5.4.20",
+        "symfony/http-kernel": "*",
         "symfony/dependency-injection": "*",
         "symfony/config": "*",
         "symfony/http-client": "*",

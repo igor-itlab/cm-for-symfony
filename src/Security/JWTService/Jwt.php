@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Security\JwtService;
+namespace AcceptcoinApi\Security\JwtService;
 
-use App\Security\DataChecker\ProjectIdChecker;
+use AcceptcoinApi\Security\DataChecker\ProjectIdChecker;
 use Jose\Component\Checker\ClaimCheckerManager;
 use Jose\Component\Checker\ExpirationTimeChecker;
 use Jose\Component\Checker\IssuedAtChecker;
@@ -16,7 +16,7 @@ use Jose\Component\Signature\Serializer\JWSSerializerManager;
 
 /**
  * Class Jwt
- * @package App\Security\JWTService
+ * @package AcceptcoinApi\Security\JWTService
  */
 class Jwt
 {

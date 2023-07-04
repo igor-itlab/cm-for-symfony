@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Api\Mapper;
+namespace AcceptcoinApi\Api\Mapper;
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class Batches extends Mapper
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Batches\Batches")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Batches\Batches")
      */
     public function getAll(Response $response): array
     {
@@ -21,7 +21,7 @@ class Batches extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Batches\Batches")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Batches\Batches")
      */
     public function getById(Response $response): array
     {
@@ -31,7 +31,7 @@ class Batches extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Batches\Batches")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Batches\Batches")
      */
     public function create(Response $response): array
     {
@@ -42,7 +42,7 @@ class Batches extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Batches\Batches")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Batches\Batches")
      */
     public function start(Response $response): array
     {
@@ -52,7 +52,7 @@ class Batches extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Batches\Batches")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Batches\Batches")
      */
     public function cancel(Response $response): array
     {

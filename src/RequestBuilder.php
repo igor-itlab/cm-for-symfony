@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace AcceptcoinApi;
 
 
-use App\Services\Method;
+use AcceptcoinApi\Services\Method;
 
 abstract class RequestBuilder implements RequestBuilderInterface
 {

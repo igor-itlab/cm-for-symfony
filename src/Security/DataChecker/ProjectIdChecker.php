@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Security\DataChecker;
+namespace AcceptcoinApi\Security\DataChecker;
 
 use Jose\Component\Checker\ClaimChecker;
 use Jose\Component\Checker\InvalidClaimException;

@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Api\Mapper\Transaction;
+namespace AcceptcoinApi\Api\Mapper\Transaction;
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class Transaction extends Mapper
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Transaction\Transaction")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Transaction\Transaction")
      */
     public function getAll(Response $response): array
     {
@@ -21,7 +21,7 @@ class Transaction extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Transaction\Transaction")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Transaction\Transaction")
      */
     public function getById(Response $response): array
     {
@@ -40,7 +40,7 @@ class Transaction extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Transaction\Transaction")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Transaction\Transaction")
      */
     public function update(Response $response): array
     {

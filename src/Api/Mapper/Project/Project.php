@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Api\Mapper\Project;
+namespace AcceptcoinApi\Api\Mapper\Project;
 
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 /**
  * @package AcceptcoinApi/Api/Mapper
@@ -15,7 +15,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function getAll(Response $response): array
     {
@@ -25,7 +25,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function getById(Response $response): array
     {
@@ -35,7 +35,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function create(Response $response): array
     {
@@ -45,7 +45,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function update(Response $response): array
     {
@@ -55,7 +55,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function addTrustedIpAddresses(Response $response): array
     {
@@ -65,7 +65,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function delete(Response $response): array
     {
@@ -75,7 +75,7 @@ class Project extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Project\Project")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Project\Project")
      */
     public function getProjectsByBalance(Response $response): array
     {

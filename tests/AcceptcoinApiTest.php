@@ -2,7 +2,7 @@
 
 namespace AcceptcoinApi\Tests;
 
-use App\AcceptcoinApi;
+use AcceptcoinApi\AcceptcoinApi;
 use PHPUnit\Framework\TestCase;
 
 

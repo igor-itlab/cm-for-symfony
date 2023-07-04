@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Api\Mapper;
+namespace AcceptcoinApi\Api\Mapper;
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class Status extends Mapper
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Status")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Status")
      */
     public function getAll(Response $response): array
     {
@@ -21,7 +21,7 @@ class Status extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Status")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Status")
      */
     public function getById(Response $response): array
     {

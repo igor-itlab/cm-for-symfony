@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Api\Mapper\Balances;
+namespace AcceptcoinApi\Api\Mapper\Balances;
 
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class Balances
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Balances\Balances")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Balances\Balances")
      */
     public function getAll(Response $response): array
     {
@@ -20,7 +20,7 @@ class Balances
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Balances\Balances")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Balances\Balances")
      */
     public function getById(Response $response): array
     {
@@ -30,7 +30,7 @@ class Balances
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Balances\Balances")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Balances\Balances")
      */
     public function getBalanceStatistic(Response $response): array
     {

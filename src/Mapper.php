@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace AcceptcoinApi;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Collections\ArrayCollection;

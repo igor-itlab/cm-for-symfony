@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Api\Response\Balances;
+namespace AcceptcoinApi\Api\Response\Balances;
 
-use App\Api\Response\PaymentMethod\Currency;
-use App\Api\Response\PaymentMethod\PaymentSystem;
-use App\Api\Response\PaymentMethod\Service;
-use App\Api\Response\User\User;
+use AcceptcoinApi\Api\Response\PaymentMethod\Currency;
+use AcceptcoinApi\Api\Response\PaymentMethod\PaymentSystem;
+use AcceptcoinApi\Api\Response\PaymentMethod\Service;
+use AcceptcoinApi\Api\Response\User\User;
 
 class Balances
 {

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Services;
+namespace AcceptcoinApi\Services;
 
 
-use App\RequestBuilder;
-use App\Response;
+use AcceptcoinApi\RequestBuilder;
+use AcceptcoinApi\Response;
 use DOMDocument;
 use Symfony\Component\HttpClient\NativeHttpClient;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;

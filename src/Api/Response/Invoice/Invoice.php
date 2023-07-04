@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Api\Response\Invoice;
+namespace AcceptcoinApi\Api\Response\Invoice;
 
-use App\Api\Response\Project\Project;
+use AcceptcoinApi\Api\Response\Project\Project;
 
 abstract class Invoice
 {

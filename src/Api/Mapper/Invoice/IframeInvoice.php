@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Api\Mapper\Invoice;
+namespace AcceptcoinApi\Api\Mapper\Invoice;
 
-use App\Mapper;
-use App\Response;
-use App\ResponseBy;
+use AcceptcoinApi\Mapper;
+use AcceptcoinApi\Response;
+use AcceptcoinApi\ResponseBy;
 
 class IframeInvoice extends Mapper
 {
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Invoice\IframeInvoice")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Invoice\IframeInvoice")
      */
     public function create(Response $response): array
     {
@@ -21,7 +21,7 @@ class IframeInvoice extends Mapper
     /**
      * @param Response $response
      * @return array
-     * @ResponseBy(value="App\Api\Response\Invoice\IframeInvoice")
+     * @ResponseBy(value="AcceptcoinApi\Api\Response\Invoice\IframeInvoice")
      */
     public function getById(Response $response): array
     {
