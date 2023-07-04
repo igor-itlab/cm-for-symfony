@@ -13,26 +13,6 @@ class Attribute extends Mapper
      * @return array
      * @ResponseBy(value="App\Api\Response\Attribute")
      */
-    public function getAll(Response $response): array
-    {
-        return $response->getResponseContent();
-    }
-
-    /**
-     * @param Response $response
-     * @return array
-     * @ResponseBy(value="App\Api\Response\Attribute")
-     */
-    public function getById(Response $response): array
-    {
-        return [$response->getResponseContent()];
-    }
-
-    /**
-     * @param Response $response
-     * @return array
-     * @ResponseBy(value="App\Api\Response\Attribute")
-     */
     public function getAttributesBalances(Response $response): array
     {
         return $response->getResponseContent();

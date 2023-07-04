@@ -3,8 +3,21 @@
 namespace App\Api;
 
 
+use App\Api\Request\Attribute;
+use App\Api\Request\Balances\BalanceHistory;
+use App\Api\Request\Balances\Balances;
+use App\Api\Request\Batches;
 use App\Api\Request\Invoice\IframeInvoice;
+use App\Api\Request\PaymentMethod\PaymentMethod;
+use App\Api\Request\PaymentMethod\ProjectPaymentMethods;
 use App\Api\Request\Project\Project;
+use App\Api\Request\Project\ProjectFee;
+use App\Api\Request\Project\ProjectSettings;
+use App\Api\Request\Status;
+use App\Api\Request\Transaction\Payment;
+use App\Api\Request\Transaction\Payout;
+use App\Api\Request\Transaction\Transaction;
+use App\Api\Request\User;
 use App\ApiResource;
 
 class AcceptcoinResource extends ApiResource
@@ -73,6 +86,22 @@ class AcceptcoinResource extends ApiResource
     }
 
     /**
+     * @return ProjectFee
+     */
+    public function projectFee(): ProjectFee
+    {
+        return new ProjectFee($this);
+    }
+
+    /**
+     * @return ProjectSettings
+     */
+    public function projectSettings(): ProjectSettings
+    {
+        return new ProjectSettings($this);
+    }
+
+    /**
      * @return IframeInvoice
      */
     public function iframeInvoice(): IframeInvoice
@@ -81,4 +110,91 @@ class AcceptcoinResource extends ApiResource
     }
 
 
+    /**
+     * @return BalanceHistory
+     */
+    public function balanceHistory(): BalanceHistory
+    {
+        return new BalanceHistory($this);
+    }
+
+    /**
+     * @return Balances
+     */
+    public function balances(): Balances
+    {
+        return new Balances($this);
+    }
+
+    /**
+     * @return PaymentMethod
+     */
+    public function paymentMethod(): PaymentMethod
+    {
+        return new PaymentMethod($this);
+    }
+
+    /**
+     * @return ProjectPaymentMethods
+     */
+    public function projectPaymentMethod(): ProjectPaymentMethods
+    {
+        return new ProjectPaymentMethods($this);
+    }
+
+    /**
+     * @return Payment
+     */
+    public function payment(): Payment
+    {
+        return new Payment($this);
+    }
+
+    /**
+     * @return Payout
+     */
+    public function payout(): Payout
+    {
+        return new Payout($this);
+    }
+
+    /**
+     * @return Transaction
+     */
+    public function transaction(): Transaction
+    {
+        return new Transaction($this);
+    }
+
+    /**
+     * @return Attribute
+     */
+    public function attribute(): Attribute
+    {
+        return new Attribute($this);
+    }
+
+    /**
+     * @return Batches
+     */
+    public function batches(): Batches
+    {
+        return new Batches($this);
+    }
+
+    /**
+     * @return User
+     */
+    public function user(): User
+    {
+        return new User($this);
+    }
+
+    /**
+     * @return Status
+     */
+    public function status(): Status
+    {
+        return new Status($this);
+    }
 }

@@ -7,15 +7,6 @@ use App\ResponseBy;
 
 class User
 {
-    /**
-     * @param Response $response
-     * @return array
-     * @ResponseBy(value="ApiClient\Api\ControlPanel\Response\User\User")
-     */
-    public function getAll(Response $response): array
-    {
-        return $response->getResponseContent();
-    }
 
     /**
      * @param Response $response
@@ -33,16 +24,6 @@ class User
      * @ResponseBy(value="ApiClient\Api\ControlPanel\Response\User\User")
      */
     public function update(Response $response): array
-    {
-        return [$response->getResponseContent()];
-    }
-
-    /**
-     * @param Response $response
-     * @return array
-     * @ResponseBy(value="ApiClient\Api\ControlPanel\Response\User\User")
-     */
-    public function create(Response $response): array
     {
         return [$response->getResponseContent()];
     }

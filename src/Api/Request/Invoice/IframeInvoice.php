@@ -15,11 +15,26 @@ class IframeInvoice extends AcceptcoinRequest
 {
 
     /**
-     * @param array $body
+     * @param string $amount
+     * @param string $referenceId
+     * @param string $returnUrl
+     * @param string $callbackUrl
      * @return mixed
      */
-    public function create(array $body): mixed
+    public function create(
+        string $amount,
+        string $referenceId,
+        string $returnUrl,
+        string $callbackUrl
+    ): mixed
     {
+        $body = [
+            "amount" => $amount,
+            "referenceId" => $referenceId,
+            "returnUrl" => $returnUrl,
+            "callBackUrl" => $callbackUrl
+        ];
+
         $this->getRequestBuilder()
             ->setMethod(Method::POST())
             ->setPath('/api/iframe-invoices')

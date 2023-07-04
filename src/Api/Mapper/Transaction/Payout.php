@@ -41,7 +41,7 @@ class Payout
      * @param Response $response
      * @return array
      */
-    public function getPaymentAmount(Response $response): array
+    public function getPayoutAmount(Response $response): array
     {
         return [$response->getResponseContent()];
     }

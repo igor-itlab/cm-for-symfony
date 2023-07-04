@@ -12,6 +12,26 @@ class ProjectSettings
      * @return array
      * @ResponseBy(value="App\Api\Response\Project\ProjectSettings")
      */
+    public function getAll(Response $response): array
+    {
+        return $response->getResponseContent();
+    }
+
+    /**
+     * @param Response $response
+     * @return array
+     * @ResponseBy(value="App\Api\Response\Project\ProjectSettings")
+     */
+    public function getById(Response $response): array
+    {
+        return [$response->getResponseContent()];
+    }
+
+    /**
+     * @param Response $response
+     * @return array
+     * @ResponseBy(value="App\Api\Response\Project\ProjectSettings")
+     */
     public function delete(Response $response): array
     {
         return $response->getResponseContent();

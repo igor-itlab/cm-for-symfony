@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Api\Request\Project;
+namespace App\Api\Request;
 
 use App\Api\AcceptcoinRequest;
 use App\Services\Method;
 
-class ProjectSettings extends AcceptcoinRequest
+class Status extends AcceptcoinRequest
 {
     /**
      * @param array|null $criteria
@@ -15,7 +15,7 @@ class ProjectSettings extends AcceptcoinRequest
     {
         $rb = $this->getRequestBuilder()
             ->setMethod(Method::GET())
-            ->setPath('api/project-settings');
+            ->setPath('api/statuses');
 
         if ($criteria) {
             $rb->setQueryParams($criteria);
@@ -32,20 +32,7 @@ class ProjectSettings extends AcceptcoinRequest
     {
         $this->getRequestBuilder()
             ->setMethod(Method::GET())
-            ->setPath("api/project-settings/$id");
-
-        return $this->send();
-    }
-
-    /**
-     * @param string $id
-     * @return mixed
-     */
-    public function delete(string $id): mixed
-    {
-        $this->getRequestBuilder()
-            ->setMethod(Method::DELETE())
-            ->setPath("api/project-settings/$id");
+            ->setPath("api/statuses/$id");
 
         return $this->send();
     }

@@ -2,12 +2,14 @@
 
 namespace App\Api\Response\Project;
 
+use App\Api\Response\Settings;
+
 class ProjectSettings
 {
     /**
      * @var int
      */
-    protected int $string;
+    protected int $id;
 
     /**
      * @var Settings[]
@@ -18,22 +20,6 @@ class ProjectSettings
      * @var string
      */
     protected string $value;
-
-    /**
-     * @return int
-     */
-    public function getString(): int
-    {
-        return $this->string;
-    }
-
-    /**
-     * @param int $string
-     */
-    public function setString(int $string): void
-    {
-        $this->string = $string;
-    }
 
     /**
      * @return array
@@ -65,5 +51,21 @@ class ProjectSettings
     public function setValue(string $value): void
     {
         $this->value = $value;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
     }
 }

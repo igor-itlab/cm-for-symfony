@@ -9,7 +9,7 @@ use App\Security\SecurityManager;
 
 class AcceptcoinRequest extends Request
 {
-    private const DOMAIN = "https://dev7.itlab-studio.com";
+    private const DOMAIN = "https://cryptomc.com";
 
     /**
      * @var SecurityManager
