@@ -13,13 +13,20 @@ class AcceptcoinApiTest extends TestCase
 
     protected AcceptcoinApi $acceptcoinApiClient;
 
-    public function setUp(): void
+    /**
+     * @param string|null $name
+     * @param array $data
+     * @param $dataName
+     */
+    public function __construct(?string $name = null, array $data = [], $dataName = '')
     {
-        $this->acceptcoinApiClient = new AcceptcoinApi();
-    }
+        parent::__construct($name, $data, $dataName);
+        $test = new AcceptcoinApiKernel('test', true);
 
-    public function testAcceptcoinApiObjectCreation()
-    {
+        $test->boot();
+        $container = $test->getContainer();
+        $this->acceptcoinApiClient = $container->get('acceptcoin.api');
+
         $this->assertInstanceOf(AcceptcoinApi::class, $this->acceptcoinApiClient);
     }
 }

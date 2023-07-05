@@ -6,15 +6,15 @@
            https://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <defaults autowire="true" autoconfigure="true" />
-        <service id="acceptcoin.client" class="Acceptcoin\Acceptcoin" public="true">
+        <service id="acceptcoin.api" class="AcceptcoinApi\AcceptcoinApi" public="true">
             <argument type="service" id="event_dispatcher" on-invalid="null"/>
             <argument type="service" id="validator" on-invalid="null"/>
 
         </service>
-        <service id="AcceptcoinApi\AcceptcoinApi" alias="acceptcoin.client" public="false"/>
-<!--        <service id="acceptcoin.control_panel_resource" class="ApiClient\Api\ControlPanel\ControlPanelResource"-->
-<!--                 public="true"/>-->
-        <service id="AcceptcoinApi\Api\ControlPanelResource" alias="api_client.control_panel_resource"
+        <service id="AcceptcoinApi\AcceptcoinApi" alias="acceptcoin.api" public="false"/>
+        <service id="acceptcoin.acceptcoin_resource" class="AcceptcoinApi\Api\AcceptcoinResource"
+                 public="true"/>
+        <service id="AcceptcoinApi\Api\AcceptcoinResource" alias="acceptcoin.acceptcoin_resource"
                  public="false"/>
     </services>
 
