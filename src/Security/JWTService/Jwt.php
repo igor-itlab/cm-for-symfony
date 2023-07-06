@@ -1,6 +1,6 @@
 <?php
 
-namespace AcceptcoinApi\Security\JwtService;
+namespace AcceptcoinApi\Security\JWTService;
 
 use AcceptcoinApi\Security\DataChecker\ProjectIdChecker;
 use Jose\Component\Checker\ClaimCheckerManager;

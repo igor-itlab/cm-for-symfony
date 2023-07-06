@@ -26,6 +26,16 @@ class Transaction
     /**
      * @var string
      */
+    protected string $amountInUSDT;
+
+    /**
+     * @var string
+     */
+    protected string $processedAmountInUSDT;
+
+    /**
+     * @var string
+     */
     protected string $processedAmount;
 
     /**
@@ -39,9 +49,9 @@ class Transaction
     protected Status $status;
 
     /**
-     * @var FlowData
+     * @var array
      */
-    protected FlowData $flowData;
+    protected array $flowData;
 
     /**
      * @var ProjectPaymentMethods
@@ -160,22 +170,6 @@ class Transaction
     }
 
     /**
-     * @return FlowData
-     */
-    public function getFlowData(): FlowData
-    {
-        return $this->flowData;
-    }
-
-    /**
-     * @param FlowData $flowData
-     */
-    public function setFlowData(FlowData $flowData): void
-    {
-        $this->flowData = $flowData;
-    }
-
-    /**
      * @return ProjectPaymentMethods
      */
     public function getProjectPaymentMethods(): ProjectPaymentMethods
@@ -237,5 +231,53 @@ class Transaction
     public function setCreatedAt(int $createdAt): void
     {
         $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return array
+     */
+    public function getFlowData(): array
+    {
+        return $this->flowData;
+    }
+
+    /**
+     * @param array $flowData
+     */
+    public function setFlowData(array $flowData): void
+    {
+        $this->flowData = $flowData;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmountInUSDT(): string
+    {
+        return $this->amountInUSDT;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProcessedAmountInUSDT(): string
+    {
+        return $this->processedAmountInUSDT;
+    }
+
+    /**
+     * @param string $amountInUSDT
+     */
+    public function setAmountInUSDT(string $amountInUSDT): void
+    {
+        $this->amountInUSDT = $amountInUSDT;
+    }
+
+    /**
+     * @param string $processedAmountInUSDT
+     */
+    public function setProcessedAmountInUSDT(string $processedAmountInUSDT): void
+    {
+        $this->processedAmountInUSDT = $processedAmountInUSDT;
     }
 }

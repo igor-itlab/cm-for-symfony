@@ -11,7 +11,7 @@ class AcceptcoinApiBundle extends Bundle
     /**
      * @return AcceptcoinApiExtension
      */
-    public function getContainerExtension()
+    public function getContainerExtension(): AcceptcoinApiExtension
     {
         if (null === $this->extension) {
             $this->extension = new AcceptcoinApiExtension();

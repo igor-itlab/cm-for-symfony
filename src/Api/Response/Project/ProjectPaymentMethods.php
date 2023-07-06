@@ -7,9 +7,9 @@ use AcceptcoinApi\Api\Response\PaymentMethod\PaymentMethod;
 class ProjectPaymentMethods
 {
     /**
-     * @var string
+     * @var int
      */
-    protected string $id;
+    protected int $id;
 
     /**
      * @var Project
@@ -22,9 +22,9 @@ class ProjectPaymentMethods
     protected PaymentMethod  $paymentMethod;
 
     /**
-     * @var float
+     * @var float|int
      */
-    protected float $exchangePercent;
+    protected float|int $exchangePercent;
 
     /**
      * @var int
@@ -42,17 +42,17 @@ class ProjectPaymentMethods
     protected string $fullConstant;
 
     /**
-     * @return string
+     * @return int
      */
-    public function getId(): string
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param string $id
+     * @param int $id
      */
-    public function setId(string $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -90,17 +90,17 @@ class ProjectPaymentMethods
     }
 
     /**
-     * @return float
+     * @return float|int
      */
-    public function getExchangePercent(): float
+    public function getExchangePercent(): float|int
     {
         return $this->exchangePercent;
     }
 
     /**
-     * @param float $exchangePercent
+     * @param float|int $exchangePercent
      */
-    public function setExchangePercent(float $exchangePercent): void
+    public function setExchangePercent(float|int $exchangePercent): void
     {
         $this->exchangePercent = $exchangePercent;
     }

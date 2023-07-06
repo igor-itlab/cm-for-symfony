@@ -20,6 +20,11 @@ class Currency
     protected string $name;
 
     /**
+     * @var float
+     */
+    protected float $purchaseRate;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -71,5 +76,21 @@ class Currency
     {
         $this->name = $name;
         return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPurchaseRate(): float
+    {
+        return $this->purchaseRate;
+    }
+
+    /**
+     * @param float $purchaseRate
+     */
+    public function setPurchaseRate(float $purchaseRate): void
+    {
+        $this->purchaseRate = $purchaseRate;
     }
 }

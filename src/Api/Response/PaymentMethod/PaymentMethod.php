@@ -16,9 +16,9 @@ class PaymentMethod
     protected string $type;
 
     /**
-     * @var string
+     * @var bool
      */
-    protected string $isActivated;
+    protected bool $isActivated;
 
     /**
      * @var string
@@ -59,6 +59,16 @@ class PaymentMethod
      * @var float
      */
     protected float $fullConstant;
+
+    /**
+     * @var Currency
+     */
+    protected Currency $currency;
+
+    /**
+     * @var PaymentSystem
+     */
+    protected PaymentSystem $paymentSystem;
 
     /**
      * @return int|null
@@ -109,17 +119,17 @@ class PaymentMethod
     }
 
     /**
-     * @return string
+     * @return bool
      */
-    public function getIsActivated(): string
+    public function getIsActivated(): bool
     {
         return $this->isActivated;
     }
 
     /**
-     * @param string $isActivated
+     * @param bool $isActivated
      */
-    public function setIsActivated(string $isActivated): void
+    public function setIsActivated(bool $isActivated): void
     {
         $this->isActivated = $isActivated;
     }
@@ -218,6 +228,38 @@ class PaymentMethod
     public function setFullConstant(float $fullConstant): void
     {
         $this->fullConstant = $fullConstant;
+    }
+
+    /**
+     * @return Currency
+     */
+    public function getCurrency(): Currency
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param Currency $currency
+     */
+    public function setCurrency(Currency $currency): void
+    {
+        $this->currency = $currency;
+    }
+
+    /**
+     * @return PaymentSystem
+     */
+    public function getPaymentSystem(): PaymentSystem
+    {
+        return $this->paymentSystem;
+    }
+
+    /**
+     * @param PaymentSystem $paymentSystem
+     */
+    public function setPaymentSystem(PaymentSystem $paymentSystem): void
+    {
+        $this->paymentSystem = $paymentSystem;
     }
 
 
