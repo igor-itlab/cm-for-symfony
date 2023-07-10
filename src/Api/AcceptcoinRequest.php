@@ -9,7 +9,7 @@ use AcceptcoinApi\Security\SecurityManager;
 
 class AcceptcoinRequest extends Request
 {
-    private const DOMAIN = "https://acceptcoin.io";
+    public const ACCEPTCOIN_DOMAIN = "https://acceptcoin.io";
 
     /**
      * @var SecurityManager
@@ -31,7 +31,7 @@ class AcceptcoinRequest extends Request
     public function createRequestBuilder(): RequestBuilderInterface
     {
         return parent::createRequestBuilder()
-            ->setDomain(self::DOMAIN)
+            ->setDomain(self::ACCEPTCOIN_DOMAIN)
             ->mergeHeaders([
                 'Accept' => "application/json",
                 'Content-Type' => "application/json",
