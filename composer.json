@@ -43,7 +43,7 @@
         "symfony/config": "*",
         "symfony/http-client": "*",
         "doctrine/annotations": "*",
-        "symfony/serializer": "^6.3",
+        "symfony/serializer": "*",
         "symfony/property-access": "*",
         "doctrine/collections": "*",
         "symfony/event-dispatcher": "*",
