@@ -17,17 +17,17 @@ class IframeInvoice extends AcceptcoinRequest
     /**
      * @param string $amount
      * @param string $referenceId
-     * @param string $returnUrlSuccess
-     * @param string $returnUrlFail
      * @param string $callbackUrl
+     * @param string|null $returnUrlSuccess
+     * @param string|null $returnUrlFail
      * @return mixed
      */
     public function create(
         string $amount,
         string $referenceId,
-        string $returnUrlSuccess,
-        string $returnUrlFail,
-        string $callbackUrl
+        string $callbackUrl,
+        string $returnUrlSuccess=null,
+        string $returnUrlFail=null
     ): mixed
     {
         $body = [

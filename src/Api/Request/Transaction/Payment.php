@@ -40,35 +40,35 @@ class Payment extends AcceptcoinRequest
     /**
      * @param string $returnUrl
      * @param string $amount
-     * @param string $note
      * @param string $paymentSystemSubName
      * @param string $currencyAsset
      * @param array $attributes
+     * @param string|null $note
      * @return mixed
      */
     public function create(
         string $returnUrl,
         string $amount,
-        string $note,
         string $paymentSystemSubName,
         string $currencyAsset,
-        array $attributes
+        array  $attributes,
+        string $note = null
     ): mixed
     {
-        $body =[
-            'returnUrl' => $returnUrl,
-            'amount' => $amount,
+        $body = [
+            'returnUrl'     => $returnUrl,
+            'amount'        => $amount,
             'paymentSystem' => $paymentSystemSubName,
-            'currency' => $currencyAsset,
-            'isPublic' => true,
+            'currency'      => $currencyAsset,
+            'isPublic'      => true,
         ];
 
-        if(!empty($attributes)) {
+        if (!empty($attributes)) {
             $body['attributes'] = $attributes;
         }
 
-        if($note) {
-            $body['note'] =  $note;
+        if ($note) {
+            $body['note'] = $note;
         }
 
         $this->getRequestBuilder()
@@ -91,7 +91,7 @@ class Payment extends AcceptcoinRequest
             ->setMethod(Method::GET())
             ->setPath("api/payment-amount")
             ->setQueryParams([
-                'amount' => $amount,
+                'amount'    => $amount,
                 'balanceId' => $balanceId,
                 'projectId' => $projectId
             ]);
