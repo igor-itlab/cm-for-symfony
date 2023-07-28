@@ -17,9 +17,10 @@ class IframeInvoiceTest extends AcceptcoinApiTest
             ->iframeInvoice()
             ->create(
                 "200",
-                "adsadasdadsad",
+                "adsadasdadsad123213",
                 "https://dev7.itlab-studio.com",
-                "https://dev7.itlab-studio.com123"
+                "https://dev7.itlab-studio.com123",
+                "https://dev7.itlab-studio.com2322"
             )
             ->first();
 

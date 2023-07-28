@@ -17,23 +17,32 @@ class IframeInvoice extends AcceptcoinRequest
     /**
      * @param string $amount
      * @param string $referenceId
-     * @param string $returnUrl
+     * @param string $returnUrlSuccess
+     * @param string $returnUrlFail
      * @param string $callbackUrl
      * @return mixed
      */
     public function create(
         string $amount,
         string $referenceId,
-        string $returnUrl,
+        string $returnUrlSuccess,
+        string $returnUrlFail,
         string $callbackUrl
     ): mixed
     {
         $body = [
-            "amount" => $amount,
+            "amount"      => $amount,
             "referenceId" => $referenceId,
-            "returnUrl" => $returnUrl,
             "callBackUrl" => $callbackUrl
         ];
+
+        if ($returnUrlSuccess) {
+            $body['returnUrlSuccess'] = $returnUrlSuccess;
+        }
+
+        if ($returnUrlFail) {
+            $body['returnUrlFail'] = $returnUrlFail;
+        }
 
         $this->getRequestBuilder()
             ->setMethod(Method::POST())

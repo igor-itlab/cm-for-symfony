@@ -33,7 +33,12 @@ abstract class Invoice
     /**
      * @var string
      */
-    protected string $returnUrl;
+    protected string $returnUrlSuccess;
+
+    /**
+     * @var string
+     */
+    protected string $returnUrlFail;
 
     /**
      * @return string
@@ -118,17 +123,33 @@ abstract class Invoice
     /**
      * @return string
      */
-    public function getReturnUrl(): string
+    public function getReturnUrlSuccess(): string
     {
-        return $this->returnUrl;
+        return $this->returnUrlSuccess;
     }
 
     /**
-     * @param string $returnUrl
+     * @param string $returnUrlSuccess
      */
-    public function setReturnUrl(string $returnUrl): void
+    public function setReturnUrlSuccess(string $returnUrlSuccess): void
     {
-        $this->returnUrl = $returnUrl;
+        $this->returnUrlSuccess = $returnUrlSuccess;
+    }
+
+    /**
+     * @return string
+     */
+    public function getReturnUrlFail(): string
+    {
+        return $this->returnUrlFail;
+    }
+
+    /**
+     * @param string $returnUrlFail
+     */
+    public function setReturnUrlFail(string $returnUrlFail): void
+    {
+        $this->returnUrlFail = $returnUrlFail;
     }
 
 }
