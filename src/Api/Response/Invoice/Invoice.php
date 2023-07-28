@@ -121,33 +121,33 @@ abstract class Invoice
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getReturnUrlSuccess(): string
+    public function getReturnUrlSuccess(): ?string
     {
-        return $this->returnUrlSuccess;
+        return $this->returnUrlSuccess ?? null;
     }
 
     /**
-     * @param string $returnUrlSuccess
+     * @param null|string $returnUrlSuccess
      */
-    public function setReturnUrlSuccess(string $returnUrlSuccess): void
+    public function setReturnUrlSuccess(?string $returnUrlSuccess): void
     {
         $this->returnUrlSuccess = $returnUrlSuccess;
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getReturnUrlFail(): string
+    public function getReturnUrlFail(): ?string
     {
-        return $this->returnUrlFail;
+        return $this->returnUrlFail ?? null;
     }
 
     /**
-     * @param string $returnUrlFail
+     * @param null|string $returnUrlFail
      */
-    public function setReturnUrlFail(string $returnUrlFail): void
+    public function setReturnUrlFail(?string $returnUrlFail): void
     {
         $this->returnUrlFail = $returnUrlFail;
     }
