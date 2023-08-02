@@ -31,14 +31,14 @@ abstract class Invoice
     protected ?string $referenceId;
 
     /**
-     * @var string
+     * @var null|string
      */
-    protected string $returnUrlSuccess;
+    protected ?string $returnUrlSuccess;
 
     /**
-     * @var string
+     * @var null|string
      */
-    protected string $returnUrlFail;
+    protected ?string $returnUrlFail;
 
     /**
      * @return string

@@ -4,8 +4,14 @@ namespace AcceptcoinApi\Api\Response\Invoice;
 
 class IframeInvoice extends Invoice
 {
+    /**
+     * @var string
+     */
     private string $callBackUrl;
 
+    /**
+     * @var string
+     */
     private string $link;
 
     /**
