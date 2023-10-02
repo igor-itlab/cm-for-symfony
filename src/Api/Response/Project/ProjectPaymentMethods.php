@@ -22,9 +22,9 @@ class ProjectPaymentMethods
     protected PaymentMethod  $paymentMethod;
 
     /**
-     * @var float|int
+     * @var string
      */
-    protected float|int $exchangePercent;
+    protected string $exchangePercent;
 
     /**
      * @var int
@@ -90,17 +90,17 @@ class ProjectPaymentMethods
     }
 
     /**
-     * @return float|int
+     * @return string
      */
-    public function getExchangePercent(): float|int
+    public function getExchangePercent(): string
     {
         return $this->exchangePercent;
     }
 
     /**
-     * @param float|int $exchangePercent
+     * @param string $exchangePercent
      */
-    public function setExchangePercent(float|int $exchangePercent): void
+    public function setExchangePercent(string $exchangePercent): void
     {
         $this->exchangePercent = $exchangePercent;
     }
